@@ -20,3 +20,13 @@ verifica se o servidor está escutando na porta especificada na variável de amb
 
 Esse comando irá criar um novo projeto fastify atualizando o package.json se existente
 `npm init fastify -- --integrate`
+
+Cria um arquivo com permissão de escrita
+`node -e "fs.openSync('hello.html', 'w')"`
+
+remove o arquivo de rota root
+`node -e "fs.unlinkSync('root.js')"`
+
+remove a pasta hello de maneira recursiva
+`node -e "fs.rmSync('hello', { recursive: true })"`
+
