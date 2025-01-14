@@ -1,19 +1,19 @@
 {
-  "name": "labs-1",
+  "name": "creating-restful-json-services",
   "version": "1.0.0",
   "description": "This project was bootstrapped with Fastify-CLI.",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
-    "start": "fastify start -l info app.js",
     "test": "tap \"test/**/*.test.js\"",
+    "start": "fastify start -l info app.js",
     "dev": "fastify start -w -l info -P app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "main": "app.js",
-  "directories": {
-    "test": "test"
-  },
   "dependencies": {
     "fastify": "^4.0.0",
     "fastify-plugin": "^4.0.0",
