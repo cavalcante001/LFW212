@@ -1,23 +1,11 @@
-# Getting Started with [Fastify-CLI](https://www.npmjs.com/package/fastify-cli)
-This project was bootstrapped with Fastify-CLI.
+Existem tres abordagens para trabalhar com promises baseadas em callback
 
-## Available Scripts
+a primeira é não utilizar async
 
-In the project directory, you can run:
+a segunda é utilizar async e retornar await reply para evitar erro no fastify
 
-### `npm run dev`
+a terceira é usar o promisify
 
-To start the app in dev mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+`const { promisify } = require('util')`
 
-### `npm start`
-
-For production mode
-
-### `npm run test`
-
-Run the test cases.
-
-## Learn More
-
-To learn Fastify, check out the [Fastify documentation](https://www.fastify.io/docs/latest/).
+`const read = promisify(bicycle.read)`
