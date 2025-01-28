@@ -1,19 +1,19 @@
 {
-  "name": "labs-1",
+  "name": "consuming-service",
   "version": "1.0.0",
+  "description": "This project was bootstrapped with Fastify-CLI.",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
     "test": "tap \"test/**/*.test.js\"",
     "start": "fastify start -l info app.js",
     "dev": "fastify start -w -l info -P app.js"
   },
   "keywords": [],
-  "license": "UNLICENSED",
-  "description": "This project was bootstrapped with Fastify-CLI.",
-  "main": "app.js",
-  "directories": {
-    "test": "test"
-  },
   "author": "",
+  "license": "ISC",
   "dependencies": {
     "fastify": "^4.0.0",
     "fastify-plugin": "^4.0.0",
