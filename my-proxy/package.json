@@ -1,26 +1,28 @@
 {
-  "name": "labs-1",
+  "name": "my-proxy",
   "version": "1.0.0",
+  "description": "This project was bootstrapped with Fastify-CLI.",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
     "test": "node --test test/**/*.test.js",
     "start": "fastify start -l info app.js",
     "dev": "fastify start -w -l info -P app.js"
   },
   "keywords": [],
-  "license": "UNLICENSED",
-  "description": "This project was bootstrapped with Fastify-CLI.",
-  "main": "app.js",
-  "directories": {
-    "test": "test"
-  },
   "author": "",
+  "license": "ISC",
   "dependencies": {
     "@fastify/autoload": "^6.0.0",
-    "@fastify/reply-from": "^12.0.1",
+    "@fastify/http-proxy": "^11.0.1",
     "@fastify/sensible": "^6.0.0",
     "fastify": "^5.0.0",
     "fastify-cli": "^7.3.0",
-    "fastify-plugin": "^5.0.0",
-    "fastify-reply-from": "^6.7.0"
+    "fastify-plugin": "^5.0.0"
+  },
+  "devDependencies": {
+    "tap": "^16.1.0"
   }
 }
